@@ -35,4 +35,15 @@ public class Quest01Tests
         // Assert
         Assert.Equal(expectedPotions, result);
     }
-}   
+
+    [Theory]
+    [InlineData("xBxAAABCDxCC", 30)]
+    public void Part3_CalculatesCorrectNumberOfPotions(string notes, int expectedPotions)
+    {
+        // Act
+        var result = EverybodyCodes.Solutions.Y2024.Quest01.Part3(notes);
+
+        // Assert
+        Assert.Equal(expectedPotions, result);
+    }
+}
