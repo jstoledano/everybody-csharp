@@ -43,4 +43,11 @@ public static class Quest01
             _ => 0
         };
     }
+
+    public static int Part3(string notes)
+    {
+        var sumOfPotions = 0;
+
+        return sumOfPotions;
+    }
 }
