@@ -13,15 +13,14 @@ public class Quest01Tests
         Assert.Equal(expectedPotions, result);
     }
 
-    [Theory]
-    [InlineData("", 0)]
-    public void Part1_EmptyLinesOfMonsters(string notes, int expectedPotions)
+    [Fact]
+    public void Part1_EmptyLinesOfMonsters()
     {
         // Act
-        int result = EverybodyCodes.Solutions.Y2024.Quest01.Part1(notes);
+        int result = EverybodyCodes.Solutions.Y2024.Quest01.Part1(string.Empty);
 
         // Assert
-        Assert.Equal(expectedPotions, result);
+        Assert.Equal(0, result);
     }
 
 

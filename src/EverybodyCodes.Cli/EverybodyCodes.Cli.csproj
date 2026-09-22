@@ -13,6 +13,9 @@
 
   <ItemGroup>
     <None Include="..\..\resources\**\*.*" CopyToOutputDirectory="PreserveNewest" LinkBase="resources" />
+    <None Update="..\..\resources\y2024\quest01\part3.txt">
+      <Link>resources\y2024\quest01\part3.txt</Link>
+    </None>
   </ItemGroup>
 
 </Project>

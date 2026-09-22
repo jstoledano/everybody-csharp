@@ -34,22 +34,24 @@ public static class Quest01
     public static int Part3(string notes)
     {
         var sumOfPotions = 0;
-
+        
         for (var i = 0; i < notes.Length; i += 3)
         {
-            sumOfPotions += NumberOfPotions(notes[i]);
-            sumOfPotions += NumberOfPotions(notes[i + 1]);
-            sumOfPotions += NumberOfPotions(notes[i + 2]);
+            var monsterCount = 0;
+            for (var a = 0; a <= 2; a++)
+            {
+                sumOfPotions += NumberOfPotions(notes[i + a]);
+                monsterCount += (notes[i + a] != 'x' ? 1 : 0);
+            }
 
-            if (notes[i] != 'x' && notes[i + 1] != 'x' && notes[i + 2] != 'x')
+            sumOfPotions += monsterCount switch
             {
-                sumOfPotions += 6;
-            }
-            else if (notes[i] != 'x' && notes[i + 1] != 'x')
-            {
-                sumOfPotions += 2;
-            }
+                3 => 6,
+                2 => 2,
+                _ => 0
+            };
         }
+        
         return sumOfPotions;
     }
 

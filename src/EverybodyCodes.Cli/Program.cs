@@ -4,6 +4,7 @@
 // El compilador infiere que esto va dentro del punto de entrada principal.
 Solve(2024, 1, 1, Quest01.Part1);
 Solve(2024, 1, 2, Quest01.Part2);
+Solve(2024, 1, 3, Quest01.Part3);
 
 // Solve(2024, 1, 2, Quest01.Part2); // Listo para cuando devuelvas otro tipo de dato.
 
