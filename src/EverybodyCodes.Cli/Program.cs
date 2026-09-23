@@ -5,8 +5,7 @@
 Solve(2024, 1, 1, Quest01.Part1);
 Solve(2024, 1, 2, Quest01.Part2);
 Solve(2024, 1, 3, Quest01.Part3);
-
-// Solve(2024, 1, 2, Quest01.Part2); // Listo para cuando devuelvas otro tipo de dato.
+Solve(2024, 2, 1, Quest02.Part1);
 
 // 2. Definición del método estático genérico <T> en el mismo archivo
 static void Solve<T>(int year, int quest, int part, Func<string, T> solution)
